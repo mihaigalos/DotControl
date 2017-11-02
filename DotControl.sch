@@ -15646,6 +15646,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="81.28" y="96.52" size="1.27" layer="91">Always enable internal pullup beforehand!</text>
 <text x="238.76" y="91.44" size="1.778" layer="91">Temperature
 Humidity</text>
+<text x="68.58" y="114.3" size="1.778" layer="91" rot="R90">MOSI</text>
+<text x="66.04" y="114.3" size="1.778" layer="91" rot="R90">SCK</text>
+<text x="63.5" y="114.3" size="1.778" layer="91" rot="R90">SDA</text>
+<text x="71.12" y="114.3" size="1.778" layer="91" rot="R90">SCL</text>
+<text x="73.66" y="114.3" size="1.778" layer="91" rot="R90">LED_ON</text>
 </plain>
 <instances>
 <instance part="SW5" gate="G$1" x="88.9" y="53.34" rot="R90"/>
@@ -15891,6 +15896,8 @@ Humidity</text>
 <wire x1="68.58" y1="129.54" x2="68.58" y2="139.7" width="0.1524" layer="91"/>
 <label x="68.58" y="139.7" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="5"/>
+<wire x1="68.58" y1="129.54" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+<junction x="68.58" y="129.54"/>
 </segment>
 </net>
 <net name="DISPLAY_RESET" class="0">
@@ -15898,6 +15905,8 @@ Humidity</text>
 <wire x1="66.04" y1="129.54" x2="66.04" y2="139.7" width="0.1524" layer="91"/>
 <label x="66.04" y="139.7" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="4"/>
+<wire x1="66.04" y1="129.54" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
+<junction x="66.04" y="129.54"/>
 </segment>
 </net>
 <net name="DISPLAY_CS" class="0">
@@ -15905,6 +15914,8 @@ Humidity</text>
 <wire x1="63.5" y1="129.54" x2="63.5" y2="139.7" width="0.1524" layer="91"/>
 <label x="63.5" y="139.7" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
+<wire x1="63.5" y1="129.54" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
+<junction x="63.5" y="129.54"/>
 </segment>
 </net>
 <net name="DISPLAY_SDA" class="0">
@@ -15912,13 +15923,8 @@ Humidity</text>
 <wire x1="71.12" y1="129.54" x2="71.12" y2="139.7" width="0.1524" layer="91"/>
 <label x="71.12" y="139.7" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="6"/>
-</segment>
-</net>
-<net name="DISPLAY_SCK" class="0">
-<segment>
-<wire x1="73.66" y1="129.54" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
-<label x="73.66" y="139.7" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="7"/>
+<wire x1="71.12" y1="129.54" x2="71.12" y2="114.3" width="0.1524" layer="91"/>
+<junction x="71.12" y="129.54"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -16025,6 +16031,13 @@ Humidity</text>
 <pinref part="U1" gate="G$1" pin="PD3(INT1/OC2B/PCINT19)"/>
 <wire x1="327.66" y1="185.42" x2="330.2" y2="185.42" width="0.1524" layer="91"/>
 <label x="330.2" y="185.42" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="73.66" y1="129.54" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
+<label x="73.66" y="139.7" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="JP1" gate="G$1" pin="7"/>
+<wire x1="73.66" y1="129.54" x2="73.66" y2="114.3" width="0.1524" layer="91"/>
+<junction x="73.66" y="129.54"/>
 </segment>
 </net>
 <net name="+5V" class="0">
