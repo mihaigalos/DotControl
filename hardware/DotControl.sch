@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15418,152 +15418,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Jumpers">
-<description>&lt;h3&gt;SparkFun Jumpers&lt;/h3&gt;
-In this library you'll find jumpers, or other semipermanent means of changing current paths. The least permanent form is the solder jumper. These can be changed by adding, removing, or moving solder. In cases that are less likely to be changed we have jumpers that are connected with traces. These can be cut with a razor, or reconnected with solder. Reference designator JP.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="SMT-JUMPER_2_NO_NO-SILK">
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
-<package name="SMT-JUMPER_2_NO_NO-SILK_ROUND">
-<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
-<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
-<text x="0" y="1.9685" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.9685" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<polygon width="0.00508125" layer="1">
-<vertex x="0.111125" y="-1.42875" curve="85"/>
-<vertex x="1.381125" y="0" curve="85"/>
-<vertex x="0.111125" y="1.42875"/>
-</polygon>
-<polygon width="0.00508125" layer="1">
-<vertex x="-0.111125" y="1.42875"/>
-<vertex x="-0.111125" y="-1.42875" curve="-85"/>
-<vertex x="-1.381125" y="0" curve="-85"/>
-</polygon>
-<polygon width="0.2032" layer="29">
-<vertex x="0" y="1.42875" curve="-90"/>
-<vertex x="1.42875" y="0" curve="-90"/>
-<vertex x="0" y="-1.42875" curve="-90"/>
-<vertex x="-1.42875" y="0" curve="-90"/>
-</polygon>
-</package>
-<package name="SMT-JUMPER_2_NO_SILK">
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="0.8636" y1="-1.016" x2="-0.8636" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="0.8636" y1="1.016" x2="1.1176" y2="0.762" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.1176" y1="0.762" x2="-0.8636" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.1176" y1="-0.762" x2="-0.8636" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.8636" y1="-1.016" x2="1.1176" y2="-0.762" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.1176" y1="-0.762" x2="1.1176" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.1176" y1="-0.762" x2="-1.1176" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-0.8636" y1="1.016" x2="0.8636" y2="1.016" width="0.1524" layer="21"/>
-<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
-<package name="SMT-JUMPER_2_NO_SILK_ROUND">
-<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
-<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
-<text x="0" y="1.9685" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.9685" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<polygon width="0.00508125" layer="1">
-<vertex x="0.111125" y="-1.42875" curve="85"/>
-<vertex x="1.381125" y="0" curve="85"/>
-<vertex x="0.111125" y="1.42875"/>
-</polygon>
-<polygon width="0.00508125" layer="1">
-<vertex x="-0.111125" y="1.42875"/>
-<vertex x="-0.111125" y="-1.42875" curve="-85"/>
-<vertex x="-1.381125" y="0" curve="-85"/>
-</polygon>
-<polygon width="0.2032" layer="29">
-<vertex x="0" y="1.42875" curve="-90"/>
-<vertex x="1.42875" y="0" curve="-90"/>
-<vertex x="0" y="-1.42875" curve="-90"/>
-<vertex x="-1.42875" y="0" curve="-90"/>
-</polygon>
-<circle x="0" y="0" radius="1.74625" width="0.2032" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SMT-JUMPER_2_NO">
-<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="JUMPER-SMT_2_NO" prefix="JP">
-<description>&lt;h3&gt;Normally open jumper&lt;/h3&gt;
-&lt;p&gt;This jumper has two pads in close proximity to each other. Apply solder to close the connection.&lt;/p&gt;
-
-&lt;p&gt;Round pads are easier to solder for beginners, but are a lot larger.&lt;/p&gt;
-&lt;p&gt;SparkFun Product that uses the round pads:
-&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12781"&gt;SparkFun EL Sequencer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="SMT-JUMPER_2_NO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_NO-SILK" package="SMT-JUMPER_2_NO_NO-SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_NO-SILK_ROUND" package="SMT-JUMPER_2_NO_NO-SILK_ROUND">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SILK" package="SMT-JUMPER_2_NO_SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SILK_ROUND" package="SMT-JUMPER_2_NO_SILK_ROUND">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15608,7 +15462,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SW2" library="Seeed-OPL-Switch" deviceset="SMD-BUTTON(2P-6.0X3.0X2.5MM)" device="-DHT-1163S" value="Previous"/>
 <part name="JP1" library="adafruit" deviceset="PINHD-1X8" device="CLEANBIG"/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
-<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="BAT1" library="Battery" deviceset="BATTERY" device="20PTH"/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED1" library="led" deviceset="GM1WA55311A" device=""/>
@@ -15616,15 +15469,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
 <part name="CN1" library="adafruit" deviceset="1X4" device="-BIG"/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="R0603"/>
-<part name="JP2" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK"/>
 <part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="TRACE"/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="R0603"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="R0603" value="10Ω"/>
 <part name="LED2" library="SparkFun" deviceset="LED" device="0603"/>
-<part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
-<part name="P+1" library="supply1" deviceset="+5V" device=""/>
-<part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="U2" library="SparkFun" deviceset="TMP102" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
@@ -15632,6 +15480,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C3" library="resistor" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15651,6 +15500,7 @@ Humidity</text>
 <text x="63.5" y="114.3" size="1.778" layer="91" rot="R90">SDA</text>
 <text x="71.12" y="114.3" size="1.778" layer="91" rot="R90">SCL</text>
 <text x="73.66" y="114.3" size="1.778" layer="91" rot="R90">LED_ON</text>
+<text x="85.09" y="138.43" size="1.27" layer="91" rot="R90">LEDDisplay</text>
 </plain>
 <instances>
 <instance part="SW5" gate="G$1" x="88.9" y="53.34" rot="R90"/>
@@ -15690,7 +15540,6 @@ Humidity</text>
 <instance part="SW2" gate="G$1" x="83.82" y="53.34" rot="R90"/>
 <instance part="JP1" gate="G$1" x="66.04" y="127" rot="MR270"/>
 <instance part="SUPPLY8" gate="GND" x="114.3" y="132.08"/>
-<instance part="+3V3" gate="G$1" x="114.3" y="162.56"/>
 <instance part="BAT1" gate="G$1" x="114.3" y="139.7" rot="R270"/>
 <instance part="+3V14" gate="G$1" x="177.8" y="289.56"/>
 <instance part="LED1" gate="G$1" x="177.8" y="281.94"/>
@@ -15701,22 +15550,18 @@ Humidity</text>
 <instance part="+3V1" gate="G$1" x="218.44" y="177.8"/>
 <instance part="SUPPLY18" gate="GND" x="218.44" y="157.48"/>
 <instance part="CN1" gate="G$1" x="231.14" y="165.1"/>
-<instance part="R3" gate="G$1" x="114.3" y="152.4" rot="R90"/>
-<instance part="JP2" gate="G$1" x="121.92" y="152.4" rot="R90"/>
 <instance part="SJ1" gate="1" x="80.01" y="219.71" rot="R90"/>
 <instance part="+3V7" gate="G$1" x="80.01" y="227.33"/>
-<instance part="R1" gate="G$1" x="148.59" y="149.86" rot="R90"/>
-<instance part="LED2" gate="G$1" x="148.59" y="142.24"/>
-<instance part="SUPPLY5" gate="GND" x="148.59" y="134.62"/>
-<instance part="P+1" gate="1" x="81.28" y="147.32"/>
-<instance part="P+2" gate="1" x="52.07" y="147.32"/>
-<instance part="P+5" gate="1" x="148.59" y="161.29"/>
+<instance part="R1" gate="G$1" x="114.3" y="160.02" rot="R90"/>
+<instance part="LED2" gate="G$1" x="114.3" y="152.4"/>
+<instance part="P+5" gate="1" x="114.3" y="171.45"/>
 <instance part="U2" gate="G$1" x="226.06" y="104.14"/>
 <instance part="SUPPLY15" gate="GND" x="213.36" y="96.52"/>
 <instance part="+3V11" gate="G$1" x="203.2" y="111.76"/>
 <instance part="C3" gate="G$1" x="203.2" y="106.68"/>
 <instance part="SUPPLY12" gate="GND" x="203.2" y="99.06"/>
 <instance part="SUPPLY7" gate="GND" x="254" y="96.52"/>
+<instance part="+3V3" gate="G$1" x="53.34" y="151.13"/>
 </instances>
 <busses>
 </busses>
@@ -15804,10 +15649,6 @@ Humidity</text>
 <pinref part="SW1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY19" gate="GND" pin="GND"/>
 <wire x1="62.23" y1="220.98" x2="62.23" y2="227.33" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -16007,14 +15848,6 @@ Humidity</text>
 <pinref part="CN1" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="157.48" x2="114.3" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="157.48" x2="114.3" y2="157.48" width="0.1524" layer="91"/>
-<junction x="114.3" y="157.48"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="SJ1" gate="1" pin="2"/>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
 </segment>
@@ -16024,6 +15857,12 @@ Humidity</text>
 <wire x1="203.2" y1="109.22" x2="213.36" y2="109.22" width="0.1524" layer="91"/>
 <junction x="203.2" y="109.22"/>
 <pinref part="U2" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="148.59" x2="53.34" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="129.54" x2="58.42" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PUSH" class="0">
@@ -16056,20 +15895,8 @@ Humidity</text>
 <junction x="160.02" y="203.2"/>
 </segment>
 <segment>
-<pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="81.28" y1="144.78" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="8"/>
-<wire x1="76.2" y1="129.54" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+2" gate="1" pin="+5V"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="52.07" y1="144.78" x2="52.07" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="52.07" y1="129.54" x2="58.42" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="148.59" y1="154.94" x2="148.59" y2="158.75" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="165.1" x2="114.3" y2="168.91" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 </segment>
 </net>
@@ -16249,6 +16076,12 @@ Humidity</text>
 <wire x1="327.66" y1="236.22" x2="330.2" y2="236.22" width="0.1524" layer="91"/>
 <label x="330.2" y="236.22" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="8"/>
+<wire x1="76.2" y1="129.54" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="129.54" x2="81.28" y2="139.7" width="0.1524" layer="91"/>
+<label x="81.28" y="138.43" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -16294,16 +16127,6 @@ Humidity</text>
 <pinref part="R2" gate="C" pin="2"/>
 </segment>
 </net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="BAT1" gate="G$1" pin="+"/>
-<wire x1="114.3" y1="147.32" x2="114.3" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="147.32" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
-<junction x="114.3" y="147.32"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R7" gate="A" pin="2"/>
@@ -16323,6 +16146,13 @@ Humidity</text>
 <pinref part="U2" gate="G$1" pin="ALERT"/>
 <wire x1="236.22" y1="101.6" x2="238.76" y2="101.6" width="0.1524" layer="91"/>
 <label x="238.76" y="101.6" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="BAT1" gate="G$1" pin="+"/>
+<wire x1="114.3" y1="147.32" x2="114.3" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
