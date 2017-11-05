@@ -5256,8 +5256,8 @@ design rules under a new name.</description>
 <element name="LED2" library="SparkFun" package="LED-0603" value="" x="27.4828" y="60.6044" rot="R180"/>
 <element name="U2" library="SparkFun" package="SOT563" value="TMP102" x="18.9992" y="13.1318" rot="MR270"/>
 <element name="C3" library="resistor" package="C0603" value="0.1uF" x="18.8976" y="11.1252" rot="MR180"/>
-<element name="U3" library="SparkFun-IC-Special-Function" package="SOT23-3" value="ATSHA204-TSU" x="28.0924" y="2.2352">
-<attribute name="PROD_ID" value="IC-11208" x="28.0924" y="3.2004" size="1.778" layer="27" display="off"/>
+<element name="U3" library="SparkFun-IC-Special-Function" package="SOT23-3" value="ATSHA204-TSU" x="28.067" y="1.7526">
+<attribute name="PROD_ID" value="IC-11208" x="28.067" y="2.7178" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -5712,10 +5712,10 @@ design rules under a new name.</description>
 <via x="21.9456" y="3.937" extent="1-16" drill="0.3"/>
 <wire x1="21.9456" y1="3.937" x2="21.9202" y2="3.937" width="0.1524" layer="1"/>
 <wire x1="21.9202" y1="3.937" x2="21.5138" y2="4.3434" width="0.1524" layer="1"/>
-<wire x1="24.765" y1="3.6576" x2="25.9588" y2="3.6576" width="0.1524" layer="1"/>
-<wire x1="25.9588" y1="3.6576" x2="27.2288" y2="2.3876" width="0.1524" layer="1"/>
-<wire x1="27.2288" y1="2.3876" x2="27.89" y2="2.3876" width="0.1524" layer="1"/>
-<wire x1="27.89" y1="2.3876" x2="29.0424" y2="1.2352" width="0.1524" layer="1"/>
+<wire x1="24.765" y1="3.6576" x2="25.781" y2="3.6576" width="0.1524" layer="1"/>
+<wire x1="25.781" y1="3.6576" x2="27.4828" y2="1.8034" width="0.1524" layer="1"/>
+<wire x1="27.4828" y1="1.8034" x2="28.2456" y2="1.8034" width="0.1524" layer="1"/>
+<wire x1="28.2456" y1="1.8034" x2="29.017" y2="0.7526" width="0.1524" layer="1"/>
 </signal>
 <signal name="PUSH">
 <contactref element="U1" pad="1"/>
@@ -5997,8 +5997,8 @@ design rules under a new name.</description>
 <wire x1="13.4112" y1="10.7188" x2="13.2842" y2="10.8458" width="0.1524" layer="1"/>
 <via x="13.2842" y="10.8458" extent="1-16" drill="0.3"/>
 <wire x1="13.2842" y1="10.8458" x2="13.2842" y2="11.43" width="0.1524" layer="16"/>
-<wire x1="27.1424" y1="1.2352" x2="26.3238" y2="1.2352" width="0.1524" layer="1"/>
-<wire x1="26.3238" y1="1.2352" x2="25.1206" y2="2.4384" width="0.1524" layer="1"/>
+<wire x1="27.117" y1="0.7526" x2="26.8064" y2="0.778" width="0.1524" layer="1"/>
+<wire x1="26.8064" y1="0.778" x2="25.1206" y2="2.4384" width="0.1524" layer="1"/>
 </signal>
 <signal name="TXD">
 <contactref element="U1" pad="31"/>
