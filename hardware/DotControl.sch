@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15491,7 +15491,6 @@ Source: AVX .. aphvc.pdf</description>
 <text x="163.83" y="259.08" size="1.27" layer="91">Blue</text>
 <text x="180.34" y="259.08" size="1.27" layer="91" rot="R90">Green</text>
 <text x="189.738" y="259.08" size="1.27" layer="91">Red</text>
-<text x="223.52" y="177.8" size="1.778" layer="91">Do not put 3V3 when battery on!</text>
 <text x="81.28" y="96.52" size="1.27" layer="91">Always enable internal pullup beforehand!</text>
 <text x="238.76" y="91.44" size="1.778" layer="91">Temperature
 Humidity</text>
