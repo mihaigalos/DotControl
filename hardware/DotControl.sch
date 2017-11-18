@@ -15565,6 +15565,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SJ2" library="SparkFun" deviceset="SOLDERJUMPER" device="TRACE"/>
+<part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15650,6 +15651,7 @@ Humidity</text>
 <instance part="+3V10" gate="G$1" x="228.6" y="63.5"/>
 <instance part="SUPPLY5" gate="GND" x="228.6" y="53.34"/>
 <instance part="SJ2" gate="1" x="217.17" y="34.29" rot="R180"/>
+<instance part="+3V9" gate="G$1" x="134.62" y="149.86"/>
 </instances>
 <busses>
 </busses>
@@ -15962,6 +15964,14 @@ Humidity</text>
 <wire x1="223.52" y1="60.96" x2="228.6" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="BAT1" gate="G$1" pin="+"/>
+<wire x1="114.3" y1="147.32" x2="114.3" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+<wire x1="134.62" y1="147.32" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
+<junction x="114.3" y="147.32"/>
+</segment>
 </net>
 <net name="PUSH" class="0">
 <segment>
@@ -16249,13 +16259,6 @@ Humidity</text>
 <pinref part="U2" gate="G$1" pin="ALERT"/>
 <wire x1="236.22" y1="101.6" x2="238.76" y2="101.6" width="0.1524" layer="91"/>
 <label x="238.76" y="101.6" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="BAT1" gate="G$1" pin="+"/>
-<wire x1="114.3" y1="147.32" x2="114.3" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
