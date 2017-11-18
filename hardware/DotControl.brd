@@ -1994,8 +1994,7 @@
 <rectangle x1="5.8293" y1="17.9705" x2="7.2009" y2="17.9959" layer="22" rot="R180"/>
 <rectangle x1="5.3721" y1="17.9705" x2="5.5753" y2="17.9959" layer="22" rot="R180"/>
 <rectangle x1="3.4925" y1="17.9705" x2="4.6609" y2="17.9959" layer="22" rot="R180"/>
-<text x="3.0734" y="5.7404" size="1.016" layer="21" font="vector" rot="R90" align="center">DotControl 
-v0.1.1</text>
+<text x="28.0416" y="36.195" size="1.016" layer="22" font="vector" rot="MR270" align="center">DotControl v0.1.2</text>
 <text x="6.477" y="2.1082" size="1.016" layer="21" font="vector" rot="R90" align="center">MOSI</text>
 <text x="23.4696" y="2.0828" size="1.016" layer="21" font="vector" rot="R90" align="center">GND</text>
 <text x="3.2258" y="36.576" size="1.4224" layer="22" font="vector" rot="MR90" align="center">Mihai Galos
@@ -5232,7 +5231,7 @@ design rules under a new name.</description>
 <element name="SW5" library="Seeed-OPL-Switch" package="SW2-4.0-6.0X3.0X2.5MM" value="Previous" x="23" y="57.3" rot="R90"/>
 <element name="SW6" library="Seeed-OPL-Switch" package="SW2-4.0-6.0X3.0X2.5MM" value="Next" x="15.6" y="51.9"/>
 <element name="SW8" library="Seeed-OPL-Switch" package="SW2-4.0-6.0X3.0X2.5MM" value="Ok" x="15.7016" y="62.6112"/>
-<element name="U$2" library="SparkFun" package="OSHW-LOGO-L" value="OSHW-LOGOL" x="6.2" y="20.8" rot="R90"/>
+<element name="U$2" library="SparkFun" package="OSHW-LOGO-L" value="OSHW-LOGOL" x="15.6694" y="60.9118" rot="MR270"/>
 <element name="R7" library="SparkFun" package="0603-ARV" value="4.7kΩ" x="14.4" y="23.2" rot="MR0"/>
 <element name="SW1" library="Seeed-OPL-Switch" package="SW2-4.0-6.0X3.0X2.5MM" value="" x="2.4" y="5.2" rot="MR90"/>
 <element name="J3" library="SparkFun-Retired" package="USB-MICROB" value="USB-MICROB" x="28.9" y="5.7" rot="MR270">
@@ -5260,6 +5259,7 @@ design rules under a new name.</description>
 <element name="U3" library="SparkFun-IC-Special-Function" package="SOT23-3" value="ATSHA204-TSU" x="28.067" y="1.7526">
 <attribute name="PROD_ID" value="IC-11208" x="28.067" y="2.7178" size="1.778" layer="27" display="off"/>
 </element>
+<element name="SJ2" library="SparkFun" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="5.1308" y="26.7462" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -6262,6 +6262,33 @@ design rules under a new name.</description>
 <via x="25.7048" y="59.817" extent="1-16" drill="0.3"/>
 <wire x1="25.7048" y1="59.817" x2="27.4454" y2="59.817" width="0.1524" layer="1"/>
 <wire x1="27.4454" y1="59.817" x2="27.4828" y2="59.8544" width="0.1524" layer="1"/>
+</signal>
+<signal name="N$12">
+</signal>
+<signal name="N$13">
+</signal>
+<signal name="N$14">
+<wire x1="5.6642" y1="26.7462" x2="6.9342" y2="26.7462" width="0.8128" layer="16"/>
+</signal>
+<signal name="N$16">
+<wire x1="4.4958" y1="26.8224" x2="4.4958" y2="26.797" width="1.016" layer="16"/>
+<wire x1="4.4958" y1="26.797" x2="1.3462" y2="26.797" width="1.016" layer="16"/>
+<wire x1="1.3462" y1="26.797" x2="1.3462" y2="28.702" width="1.016" layer="16"/>
+<wire x1="1.3462" y1="28.702" x2="5.1562" y2="28.702" width="1.016" layer="16"/>
+<wire x1="5.1562" y1="28.702" x2="5.1562" y2="30.8356" width="1.016" layer="16"/>
+<wire x1="5.1562" y1="30.8356" x2="1.3716" y2="30.8356" width="1.016" layer="16"/>
+<wire x1="1.3716" y1="30.8356" x2="1.3716" y2="32.9692" width="1.016" layer="16"/>
+<wire x1="1.3716" y1="32.9692" x2="5.08" y2="32.9692" width="1.016" layer="16"/>
+<wire x1="5.08" y1="32.9692" x2="5.08" y2="35.3568" width="1.016" layer="16"/>
+<wire x1="5.08" y1="35.3568" x2="1.3716" y2="35.3568" width="1.016" layer="16"/>
+<wire x1="1.3716" y1="35.3568" x2="1.3716" y2="37.5412" width="1.016" layer="16"/>
+<wire x1="1.3716" y1="37.5412" x2="5.08" y2="37.5412" width="1.016" layer="16"/>
+<wire x1="5.08" y1="37.5412" x2="5.08" y2="39.878" width="1.016" layer="16"/>
+<wire x1="5.08" y1="39.878" x2="1.397" y2="39.878" width="1.016" layer="16"/>
+<wire x1="1.397" y1="39.878" x2="1.397" y2="42.291" width="1.016" layer="16"/>
+<wire x1="1.397" y1="42.291" x2="5.0546" y2="42.291" width="1.016" layer="16"/>
+<wire x1="5.0546" y1="42.291" x2="5.0546" y2="44.7802" width="1.016" layer="16"/>
+<wire x1="5.0546" y1="44.7802" x2="1.2954" y2="44.7802" width="1.016" layer="16"/>
 </signal>
 </signals>
 <errors>

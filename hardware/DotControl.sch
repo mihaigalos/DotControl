@@ -15564,6 +15564,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U3" library="SparkFun-IC-Special-Function" deviceset="ATSHA204" device="-TSU"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
+<part name="SJ2" library="SparkFun" deviceset="SOLDERJUMPER" device="TRACE"/>
 </parts>
 <sheets>
 <sheet>
@@ -15648,6 +15649,7 @@ Humidity</text>
 <instance part="U3" gate="G$1" x="215.9" y="58.42"/>
 <instance part="+3V10" gate="G$1" x="228.6" y="63.5"/>
 <instance part="SUPPLY5" gate="GND" x="228.6" y="53.34"/>
+<instance part="SJ2" gate="1" x="217.17" y="34.29" rot="R180"/>
 </instances>
 <busses>
 </busses>
