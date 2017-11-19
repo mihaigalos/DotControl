@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -19375,6 +19375,25 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <rectangle x1="2.082" y1="-0.425" x2="2.717" y2="0.425" layer="21"/>
 <rectangle x1="-2.717" y1="-0.425" x2="-2.082" y2="0.425" layer="21"/>
 </package>
+<package name="SOT23">
+<description>&lt;B&gt;DIODE&lt;/B&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.1524" x2="-1.4224" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="-1.4224" y1="0.6604" x2="-0.8636" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.1524" width="0.1524" layer="21"/>
+<wire x1="0.8636" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="21"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="D">
@@ -19389,6 +19408,35 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
 <text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
+</symbol>
+<symbol name="SDD-1">
+<wire x1="-3.81" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="3.81" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="1.016" x2="-0.635" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.016" x2="-1.905" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.905" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-1.016" x2="1.905" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0.635" y1="1.016" x2="0.635" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="0.635" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<circle x="0" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="0.762" y="2.0066" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.318" y="-3.9624" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="A2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="C" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -19958,6 +20006,125 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="BAS70-05" prefix="D">
+<description>&lt;b&gt;Silicon Schottky Diodes&lt;/b&gt;&lt;p&gt;
+General-purpose diode for high-speed switching</description>
+<gates>
+<gate name="G$1" symbol="SDD-1" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="A1" pad="1"/>
+<connect gate="G$1" pin="A2" pad="2"/>
+<connect gate="G$1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun-Jumpers">
+<description>&lt;h3&gt;SparkFun Jumpers&lt;/h3&gt;
+In this library you'll find jumpers, or other semipermanent means of changing current paths. The least permanent form is the solder jumper. These can be changed by adding, removing, or moving solder. In cases that are less likely to be changed we have jumpers that are connected with traces. These can be cut with a razor, or reconnected with solder. Reference designator JP.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SMT-JUMPER_2_NC_TRACE_NO-SILK">
+<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.254" layer="1"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.1905" y="0.127"/>
+<vertex x="0.1905" y="0.127"/>
+<vertex x="0.1905" y="-0.127"/>
+<vertex x="-0.1905" y="-0.127"/>
+</polygon>
+</package>
+<package name="SMT-JUMPER_2_NC_TRACE_SILK">
+<wire x1="0.762" y1="-1.016" x2="-0.762" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="1.016" x2="1.2192" y2="0.5588" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.2192" y1="0.5588" x2="-0.762" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.2192" y1="-0.5588" x2="-0.762" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.762" y1="-1.016" x2="1.2192" y2="-0.5588" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.2192" y1="-0.5588" x2="1.2192" y2="0.5588" width="0.1524" layer="21"/>
+<wire x1="-1.2192" y1="-0.5588" x2="-1.2192" y2="0.5588" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="1.016" x2="0.762" y2="1.016" width="0.1524" layer="21"/>
+<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.254" layer="1"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.1905" y="0.127"/>
+<vertex x="0.1905" y="0.127"/>
+<vertex x="0.1905" y="-0.127"/>
+<vertex x="-0.1905" y="-0.127"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="SMT-JUMPER_2_NC_TRACE">
+<wire x1="0.381" y1="0.635" x2="1.016" y2="0" width="1.27" layer="94" curve="-90" cap="flat"/>
+<wire x1="1.016" y1="0" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-90" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="-0.762" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JUMPER-SMT_2_NC_TRACE" prefix="JP">
+<description>&lt;h3&gt;Normally closed trace jumper&lt;/h3&gt;
+&lt;p&gt;This jumper has a trace between two pads so it's normally closed (NC). Use a razor knife to open the connection. For best results follow the IPC guidelines for cutting traces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cutout at least 0.063 mm (0.005 in).&lt;/li&gt;
+&lt;li&gt;Remove all loose material to clean up the cut area.&lt;/li&gt;
+&lt;li&gt;Seal the cut with an approved epoxy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Reapply solder to reclose the connection.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SMT-JUMPER_2_NC_TRACE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_NO-SILK" package="SMT-JUMPER_2_NC_TRACE_NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK" package="SMT-JUMPER_2_NC_TRACE_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -20037,6 +20204,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="X1" library="adafruit" deviceset="ANTENNA_U.FL" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
+<part name="D4" library="diode" deviceset="BAS70-05" device=""/>
+<part name="JP2" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_NO-SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -20047,7 +20216,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="163.83" y="259.08" size="1.27" layer="91">Blue</text>
 <text x="180.34" y="259.08" size="1.27" layer="91" rot="R90">Green</text>
 <text x="189.738" y="259.08" size="1.27" layer="91">Red</text>
-<text x="81.28" y="96.52" size="1.27" layer="91">Always enable internal pullup beforehand!</text>
+<text x="74.93" y="46.99" size="1.27" layer="91" rot="R90">Always enable internal pullup beforehand!</text>
 <text x="238.76" y="91.44" size="1.778" layer="91">Temperature
 Humidity</text>
 <text x="68.58" y="114.3" size="1.778" layer="91" rot="R90">MOSI</text>
@@ -20057,12 +20226,13 @@ Humidity</text>
 <text x="73.66" y="114.3" size="1.778" layer="91" rot="R90">LED_ON</text>
 <text x="85.09" y="138.43" size="1.27" layer="91" rot="R90">LEDDisplay</text>
 <text x="208.28" y="71.12" size="3.81" layer="91">Authentification module</text>
+<text x="110.49" y="96.52" size="1.27" layer="91">RGB on press</text>
 </plain>
 <instances>
 <instance part="SW5" gate="G$1" x="88.9" y="53.34" rot="R90"/>
 <instance part="SW6" gate="G$1" x="93.98" y="53.34" rot="R90"/>
 <instance part="SUPPLY13" gate="GND" x="93.98" y="38.1"/>
-<instance part="SW8" gate="G$1" x="99.06" y="53.34" rot="R90"/>
+<instance part="SW8" gate="G$1" x="138.43" y="53.34" rot="R90"/>
 <instance part="SUPPLY2" gate="GND" x="60.96" y="124.46"/>
 <instance part="U$2" gate="G$1" x="7.62" y="134.62"/>
 <instance part="R7" gate="A" x="68.58" y="205.74"/>
@@ -20132,6 +20302,8 @@ Humidity</text>
 <instance part="P+1" gate="1" x="358.14" y="129.54"/>
 <instance part="X1" gate="G$1" x="419.1" y="223.52" rot="R180"/>
 <instance part="SUPPLY9" gate="GND" x="424.18" y="226.06"/>
+<instance part="D4" gate="G$1" x="123.19" y="69.85" rot="R270"/>
+<instance part="JP2" gate="G$1" x="105.41" y="80.01"/>
 </instances>
 <busses>
 </busses>
@@ -20142,7 +20314,7 @@ Humidity</text>
 <pinref part="SW6" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="45.72" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="SW8" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="45.72" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="138.43" y1="45.72" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
 <junction x="93.98" y="45.72"/>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
 <wire x1="93.98" y1="45.72" x2="93.98" y2="40.64" width="0.1524" layer="91"/>
@@ -20531,6 +20703,12 @@ Humidity</text>
 <label x="187.96" y="259.08" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="R2" gate="D" pin="1"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="110.49" y1="80.01" x2="123.19" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="123.19" y1="80.01" x2="123.19" y2="82.55" width="0.1524" layer="91"/>
+<label x="123.19" y="82.55" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="LIGHT_SENSE" class="0">
 <segment>
@@ -20612,8 +20790,12 @@ Humidity</text>
 </segment>
 <segment>
 <pinref part="SW6" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="60.96" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
-<label x="93.98" y="71.12" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="93.98" y1="60.96" x2="93.98" y2="80.01" width="0.1524" layer="91"/>
+<label x="93.98" y="82.55" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="80.01" x2="93.98" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="100.33" y1="80.01" x2="93.98" y2="80.01" width="0.1524" layer="91"/>
+<junction x="93.98" y="80.01"/>
 </segment>
 </net>
 <net name="TXD" class="0">
@@ -20629,8 +20811,12 @@ Humidity</text>
 </segment>
 <segment>
 <pinref part="SW2" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="60.96" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
-<label x="83.82" y="71.12" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="83.82" y1="60.96" x2="83.82" y2="64.77" width="0.1524" layer="91"/>
+<label x="83.82" y="82.55" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="D4" gate="G$1" pin="A2"/>
+<wire x1="83.82" y1="64.77" x2="83.82" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="123.19" y1="64.77" x2="83.82" y2="64.77" width="0.1524" layer="91"/>
+<junction x="83.82" y="64.77"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -20646,8 +20832,12 @@ Humidity</text>
 </segment>
 <segment>
 <pinref part="SW5" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="60.96" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
-<label x="88.9" y="71.12" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="88.9" y1="60.96" x2="88.9" y2="74.93" width="0.1524" layer="91"/>
+<label x="88.9" y="82.55" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="D4" gate="G$1" pin="A1"/>
+<wire x1="88.9" y1="74.93" x2="88.9" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="123.19" y1="74.93" x2="88.9" y2="74.93" width="0.1524" layer="91"/>
+<junction x="88.9" y="74.93"/>
 </segment>
 </net>
 <net name="ADC" class="0">
@@ -20665,8 +20855,12 @@ Humidity</text>
 </segment>
 <segment>
 <pinref part="SW8" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="60.96" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
-<label x="99.06" y="71.12" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="138.43" y1="60.96" x2="138.43" y2="69.85" width="0.1524" layer="91"/>
+<label x="138.43" y="82.55" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="138.43" y1="69.85" x2="138.43" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="125.73" y1="69.85" x2="138.43" y2="69.85" width="0.1524" layer="91"/>
+<junction x="138.43" y="69.85"/>
 </segment>
 </net>
 <net name="OUTA" class="0">
@@ -20703,14 +20897,14 @@ Humidity</text>
 <label x="330.2" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="GREEN" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="CBLUE"/>
 <wire x1="177.8" y1="276.86" x2="177.8" y2="274.32" width="0.1524" layer="91"/>
 <pinref part="R2" gate="B" pin="2"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="RED" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="CGREEN"/>
 <wire x1="187.96" y1="274.32" x2="187.96" y2="276.86" width="0.1524" layer="91"/>
@@ -20718,7 +20912,7 @@ Humidity</text>
 <pinref part="R2" gate="D" pin="2"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="BLUE" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="CRED"/>
 <wire x1="172.72" y1="276.86" x2="167.64" y2="276.86" width="0.1524" layer="91"/>
@@ -20812,6 +21006,14 @@ Humidity</text>
 <pinref part="X1" gate="G$1" pin="SIGNAL"/>
 <wire x1="408.94" y1="223.52" x2="414.02" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="ANT"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<wire x1="102.87" y1="99.06" x2="130.81" y2="99.06" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="130.81" y1="99.06" x2="130.81" y2="57.15" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="130.81" y1="57.15" x2="101.6" y2="57.15" width="0.1524" layer="91" style="shortdash"/>
+<wire x1="101.6" y1="57.15" x2="101.6" y2="99.06" width="0.1524" layer="91" style="shortdash"/>
 </segment>
 </net>
 </nets>
