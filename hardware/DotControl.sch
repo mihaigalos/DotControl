@@ -10844,6 +10844,28 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="4" x="3.81" y="0" dx="1.27" dy="2.54" layer="1"/>
 <smd name="1" x="-3.81" y="0" dx="1.27" dy="2.54" layer="1"/>
 </package>
+<package name="U.FL">
+<wire x1="1.3" y1="0.7" x2="1.3" y2="2.1" width="0.2032" layer="21"/>
+<wire x1="1.3" y1="2.1" x2="-1.3" y2="2.1" width="0.2032" layer="21"/>
+<wire x1="-1.3" y1="-2.1" x2="1.3" y2="-2.1" width="0.2032" layer="21"/>
+<wire x1="1.3" y1="-2.1" x2="1.3" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="-1.3" y1="0.7" x2="-1.3" y2="2.1" width="0.2032" layer="21"/>
+<wire x1="-1.3" y1="-2.1" x2="-1.3" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="2" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-2" x2="1.4" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="0.7" x2="1.5" y2="2.1" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-2.1" x2="1.5" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="2.1" x2="1.3" y2="2.1" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="0.7" x2="1.3" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-0.7" x2="1.3" y2="-0.7" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-2.1" x2="1.3" y2="-2.1" width="0.2032" layer="21"/>
+<smd name="1" x="0" y="1.375" dx="2.2" dy="1.05" layer="1"/>
+<smd name="2" x="0" y="-1.375" dx="2.2" dy="1.05" layer="1"/>
+<smd name="3" x="1.525" y="0" dx="0.8" dy="1" layer="1"/>
+<rectangle x1="-0.889" y1="-0.8255" x2="0.889" y2="0.8255" layer="41"/>
+<text x="-1.27" y="2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PINHD6">
@@ -10887,6 +10909,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="2" x="-5.08" y="0" length="middle"/>
 <pin name="3" x="-5.08" y="-2.54" length="middle"/>
 <pin name="4" x="-5.08" y="-5.08" length="middle"/>
+</symbol>
+<symbol name="U.FL">
+<wire x1="0" y1="-2.54" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.1359" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<pin name="GND@0" x="-2.54" y="-5.08" visible="off" length="short" direction="pas"/>
+<pin name="SIGNAL" x="5.08" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="GND@1" x="-2.54" y="-7.62" visible="off" length="short" direction="pas"/>
+<text x="-2.54" y="3.302" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11100,6 +11132,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ANTENNA_U.FL" prefix="X" uservalue="yes">
+<description>&lt;p&gt;U.FL Antenna Connector&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="U.FL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="U.FL">
+<connects>
+<connect gate="G$1" pin="GND@0" pad="1"/>
+<connect gate="G$1" pin="GND@1" pad="2"/>
+<connect gate="G$1" pin="SIGNAL" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -19985,6 +20035,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="X1" library="adafruit" deviceset="ANTENNA_U.FL" device=""/>
+<part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20078,6 +20130,8 @@ Humidity</text>
 <instance part="R4" gate="G$1" x="347.98" y="109.22"/>
 <instance part="R5" gate="G$1" x="358.14" y="121.92" rot="R90"/>
 <instance part="P+1" gate="1" x="358.14" y="129.54"/>
+<instance part="X1" gate="G$1" x="419.1" y="223.52" rot="R180"/>
+<instance part="SUPPLY9" gate="GND" x="424.18" y="226.06"/>
 </instances>
 <busses>
 </busses>
@@ -20190,6 +20244,15 @@ Humidity</text>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
 <wire x1="322.58" y1="96.52" x2="322.58" y2="91.44" width="0.1524" layer="91"/>
 <junction x="322.58" y="96.52"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="GND@0"/>
+<pinref part="SUPPLY9" gate="GND" pin="GND"/>
+<wire x1="421.64" y1="228.6" x2="424.18" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="GND@1"/>
+<wire x1="421.64" y1="231.14" x2="424.18" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="424.18" y1="231.14" x2="424.18" y2="228.6" width="0.1524" layer="91"/>
+<junction x="424.18" y="228.6"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -20742,6 +20805,13 @@ Humidity</text>
 <pinref part="U1" gate="G$1" pin="PC2(ADC2PCINT10)"/>
 <wire x1="327.66" y1="208.28" x2="330.2" y2="208.28" width="0.1524" layer="91"/>
 <label x="330.2" y="208.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="SIGNAL"/>
+<wire x1="408.94" y1="223.52" x2="414.02" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="ANT"/>
 </segment>
 </net>
 </nets>
