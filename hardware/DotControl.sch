@@ -20531,11 +20531,6 @@ Humidity</text>
 <label x="187.96" y="259.08" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="R2" gate="D" pin="1"/>
 </segment>
-<segment>
-<pinref part="SW5" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="60.96" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
-<label x="88.9" y="71.12" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="LIGHT_SENSE" class="0">
 <segment>
@@ -20648,6 +20643,11 @@ Humidity</text>
 <wire x1="167.64" y1="264.16" x2="167.64" y2="259.08" width="0.1524" layer="91"/>
 <label x="167.64" y="259.08" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="R2" gate="C" pin="1"/>
+</segment>
+<segment>
+<pinref part="SW5" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="60.96" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
+<label x="88.9" y="71.12" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="ADC" class="0">
