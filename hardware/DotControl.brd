@@ -2008,6 +2008,8 @@
 <rectangle x1="0.1524" y1="25.527" x2="5.6388" y2="48.9204" layer="41"/>
 <rectangle x1="0.1524" y1="25.527" x2="5.6134" y2="48.9712" layer="42"/>
 <text x="4.1402" y="76.581" size="1.778" layer="21">Check USB charging</text>
+<text x="9.4234" y="7.8486" size="0.8128" layer="21" rot="R90">SDA</text>
+<text x="20.5486" y="10.16" size="0.8128" layer="21" rot="R270">GND</text>
 </plain>
 <libraries>
 <library name="Seeed-OPL-Switch">
@@ -5623,7 +5625,6 @@ design rules under a new name.</description>
 <via x="23.5278" y="8.1392" extent="1-16" drill="0.3"/>
 <via x="21.0132" y="12.2794" extent="1-16" drill="0.3"/>
 <via x="20.1242" y="4.9896" extent="1-16" drill="0.3"/>
-<via x="21.064" y="8.3424" extent="1-16" drill="0.3"/>
 <wire x1="16.1798" y1="17.018" x2="16.1798" y2="17.8308" width="0.1524" layer="16"/>
 <wire x1="16.1798" y1="17.8308" x2="17.4752" y2="17.8308" width="0.1524" layer="16"/>
 <wire x1="17.4752" y1="17.8308" x2="17.4752" y2="17.8562" width="0.1524" layer="16"/>
@@ -5688,7 +5689,7 @@ design rules under a new name.</description>
 <contactref element="JP3" pad="3"/>
 <contactref element="U1" pad="17"/>
 <wire x1="12.4968" y1="15.5448" x2="12.4968" y2="16.3068" width="0.1524" layer="16"/>
-<wire x1="9.9314" y1="12.9794" x2="12.4968" y2="15.5448" width="0.1524" layer="16"/>
+<wire x1="9.9822" y1="13.0048" x2="12.4968" y2="15.5448" width="0.1524" layer="16"/>
 <wire x1="9.4488" y1="7.4676" x2="9.4488" y2="9.7536" width="0.1524" layer="16"/>
 <wire x1="10.0584" y1="5.9436" x2="10.0584" y2="6.858" width="0.1524" layer="16"/>
 <wire x1="9.6012" y1="5.4864" x2="10.0584" y2="5.9436" width="0.1524" layer="16"/>
@@ -5699,9 +5700,9 @@ design rules under a new name.</description>
 <wire x1="12.4968" y1="16.3068" x2="12.6" y2="16.35" width="0.1524" layer="16"/>
 <wire x1="13.716" y1="2.1336" x2="13.73" y2="2.1" width="0.1524" layer="16"/>
 <wire x1="9.4488" y1="7.4676" x2="10.0584" y2="6.858" width="0.1524" layer="16"/>
-<wire x1="9.9314" y1="12.9794" x2="9.9314" y2="10.9474" width="0.1524" layer="16"/>
-<wire x1="9.9314" y1="10.9474" x2="9.7028" y2="10.7188" width="0.1524" layer="16"/>
-<wire x1="9.7028" y1="10.7188" x2="9.7028" y2="10.0076" width="0.1524" layer="16"/>
+<wire x1="9.9822" y1="13.0048" x2="9.9822" y2="10.922" width="0.1524" layer="16"/>
+<wire x1="9.9822" y1="10.922" x2="9.7028" y2="10.668" width="0.1524" layer="16"/>
+<wire x1="9.7028" y1="10.668" x2="9.7028" y2="10.0076" width="0.1524" layer="16"/>
 <wire x1="9.7028" y1="10.0076" x2="9.4488" y2="9.7536" width="0.1524" layer="16"/>
 </signal>
 <signal name="MISO">
