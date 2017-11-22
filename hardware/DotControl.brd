@@ -5812,7 +5812,7 @@ design rules under a new name.</description>
 <element name="R2" library="SparkFun" package="0603-ARV" value="" x="15.8" y="55.6" rot="MR0"/>
 <element name="CN1" library="adafruit" package="1X04-BIG" value="1X4-BIG" x="11.2" y="9"/>
 <element name="SJ1" library="SparkFun" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="16.7" y="26.4" rot="MR90"/>
-<element name="R1" library="resistor" package="R0603" value="10Ω" x="28.4226" y="60.5282" rot="MR270"/>
+<element name="R1" library="resistor" package="R0603" value="75Ω" x="28.4226" y="60.5282" rot="MR270"/>
 <element name="LED2" library="SparkFun" package="LED-0603" value="" x="27.4828" y="60.6044" rot="R180"/>
 <element name="U2" library="SparkFun" package="SOT563" value="TMP102" x="18.9992" y="13.1318" rot="MR270"/>
 <element name="C3" library="resistor" package="C0603" value="0.1uF" x="18.8976" y="11.1252" rot="MR180"/>
@@ -5838,7 +5838,7 @@ design rules under a new name.</description>
 <element name="SJ5" library="SparkFun" package="SJ_3" value="" x="6.7564" y="16.9418" rot="MR0"/>
 <element name="C8" library="resistor" package="C0603" value="0.1uF" x="9.8552" y="19.3548" rot="MR90"/>
 <element name="C4" library="resistor" package="C0603" value="0.1uF" x="3.1242" y="17.6022" rot="MR270"/>
-<element name="R6" library="resistor" package="R0603" value="70Ω" x="23.876" y="61.3918" rot="MR0"/>
+<element name="R6" library="resistor" package="R0603" value="1kΩ" x="23.876" y="61.3918" rot="MR0"/>
 <element name="C5" library="adafruit" package="C3216" value="100uF 4V" x="5.4864" y="21.0312" rot="R180"/>
 </elements>
 <signals>

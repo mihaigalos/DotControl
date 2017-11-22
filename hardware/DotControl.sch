@@ -28484,7 +28484,7 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 <part name="CN1" library="adafruit" deviceset="1X4" device="-BIG"/>
 <part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="TRACE"/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="R0603" value="10Ω"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="R0603" value="75Ω"/>
 <part name="LED2" library="SparkFun" deviceset="LED" device="0603"/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="U2" library="SparkFun" deviceset="TMP102" device=""/>
@@ -28526,7 +28526,7 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 <part name="C4" library="resistor" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="GND" device=""/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="R0603" value="70Ω"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="R0603" value="1kΩ"/>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 <part name="C5" library="adafruit" deviceset="C-US" device="C3216" value="100uF 4V"/>
 <part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
@@ -28554,7 +28554,7 @@ Humidity</text>
 <wire x1="576.58" y1="246.38" x2="576.58" y2="165.1" width="0.1524" layer="95" style="longdash"/>
 <text x="505.46" y="167.64" size="3.81" layer="95">Movement</text>
 <wire x1="457.2" y1="246.38" x2="457.2" y2="165.1" width="0.1524" layer="95" style="longdash"/>
-<text x="116.84" y="170.18" size="1.778" layer="91">See Schematic Sheet 2 for further details</text>
+<text x="116.84" y="167.64" size="1.778" layer="91">Model : http://tinyurl.com/yc4ltowd</text>
 </plain>
 <instances>
 <instance part="SW5" gate="G$1" x="88.9" y="53.34" rot="R90"/>
@@ -29476,24 +29476,6 @@ Humidity</text>
 <wire x1="508" y1="218.44" x2="497.84" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-</nets>
-</sheet>
-<sheet>
-<plain>
-<text x="2.54" y="73.66" size="1.778" layer="91">circuitlab.com simulations for battery charge
-Values for 10 and 70 ohm voltage divider</text>
-<text x="15.24" y="50.8" size="1.778" layer="91">2.6V          4.289mA
-2.7V          2.568mA
-2.8V          1.433mA
-2.9V          756uA
-3V            386uA
-3.1V         Off</text>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
 </nets>
 </sheet>
 </sheets>
