@@ -29490,7 +29490,7 @@ Humidity</text>
 <sheet>
 <plain>
 <text x="-17.78" y="86.36" size="1.778" layer="91">LeLe: 
-* 170uA drop on LDCL015 voltage reg. Need transistor to disable it hwn only on battery.
+* 170uA drop on LDCL015 voltage reg if ENA pin floating. Need pulldown.
 * 16Mhz crystal with 256 division still draws 630uA in MCU sleep + no display. Probably don't use crystal?</text>
 </plain>
 <instances>
