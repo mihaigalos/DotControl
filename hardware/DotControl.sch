@@ -28530,6 +28530,7 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 <part name="C5" library="adafruit" deviceset="C-US" device="C3216" value="100uF 4V"/>
 <part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
+<part name="R8" library="resistor" deviceset="R-EU_" device="R0603" value="&gt;1KΩ"/>
 </parts>
 <sheets>
 <sheet>
@@ -28573,11 +28574,11 @@ Humidity</text>
 <instance part="P+3" gate="1" x="111.76" y="205.74" rot="R90"/>
 <instance part="SUPPLY10" gate="GND" x="121.92" y="193.04"/>
 <instance part="J3" gate="G$1" x="124.46" y="203.2"/>
-<instance part="U$4" gate="G$1" x="170.18" y="200.66"/>
-<instance part="SUPPLY27" gate="GND" x="175.26" y="187.96" rot="MR0"/>
+<instance part="U$4" gate="G$1" x="170.18" y="203.2"/>
+<instance part="SUPPLY27" gate="GND" x="175.26" y="185.42" rot="MR0"/>
 <instance part="+3V19" gate="G$1" x="182.88" y="213.36"/>
 <instance part="P+4" gate="1" x="152.4" y="213.36"/>
-<instance part="C1" gate="G$1" x="187.96" y="200.66"/>
+<instance part="C1" gate="G$1" x="187.96" y="203.2"/>
 <instance part="JP3" gate="A" x="228.6" y="204.47"/>
 <instance part="+3V6" gate="G$1" x="208.28" y="201.93" rot="R90"/>
 <instance part="SUPPLY1" gate="GND" x="217.17" y="196.85"/>
@@ -28652,6 +28653,7 @@ Humidity</text>
 <instance part="SUPPLY20" gate="GND" x="99.06" y="154.94"/>
 <instance part="C5" gate="G$1" x="160.02" y="144.78"/>
 <instance part="SUPPLY21" gate="GND" x="160.02" y="129.54"/>
+<instance part="R8" gate="G$1" x="160.02" y="195.58" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -28686,11 +28688,15 @@ Humidity</text>
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY27" gate="GND" pin="GND"/>
-<wire x1="175.26" y1="190.5" x2="175.26" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="187.96" x2="175.26" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="193.04" x2="187.96" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="193.04" x2="187.96" y2="195.58" width="0.1524" layer="91"/>
-<junction x="175.26" y="193.04"/>
+<wire x1="175.26" y1="190.5" x2="175.26" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="195.58" x2="187.96" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="195.58" x2="187.96" y2="198.12" width="0.1524" layer="91"/>
+<junction x="175.26" y="195.58"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="190.5" x2="175.26" y2="190.5" width="0.1524" layer="91"/>
+<junction x="175.26" y="190.5"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="6"/>
@@ -28979,10 +28985,10 @@ Humidity</text>
 <segment>
 <pinref part="U$4" gate="G$1" pin="OUT"/>
 <pinref part="+3V19" gate="G$1" pin="+3V3"/>
-<wire x1="182.88" y1="210.82" x2="182.88" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="210.82" x2="182.88" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="203.2" x2="182.88" y2="203.2" width="0.1524" layer="91"/>
-<junction x="182.88" y="203.2"/>
+<wire x1="187.96" y1="205.74" x2="182.88" y2="205.74" width="0.1524" layer="91"/>
+<junction x="182.88" y="205.74"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="5"/>
@@ -29099,11 +29105,14 @@ Humidity</text>
 <segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <pinref part="U$4" gate="G$1" pin="VIN"/>
-<wire x1="152.4" y1="210.82" x2="152.4" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="203.2" x2="160.02" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="210.82" x2="152.4" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="205.74" x2="160.02" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="ENA"/>
-<wire x1="160.02" y1="200.66" x2="160.02" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="203.2" x2="160.02" y2="205.74" width="0.1524" layer="91"/>
+<junction x="160.02" y="205.74"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <junction x="160.02" y="203.2"/>
+<wire x1="160.02" y1="203.2" x2="160.02" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -29476,6 +29485,19 @@ Humidity</text>
 <wire x1="508" y1="218.44" x2="497.84" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<text x="-17.78" y="86.36" size="1.778" layer="91">LeLe: 
+* 170uA drop on LDCL015 voltage reg. Need transistor to disable it hwn only on battery.
+* 16Mhz crystal with 256 division still draws 630uA in MCU sleep + no display. Probably don't use crystal?</text>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
