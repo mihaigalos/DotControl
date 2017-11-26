@@ -24332,7 +24332,10 @@ from voltage regulator</text>
 <plain>
 <text x="-17.78" y="86.36" size="1.778" layer="91">LeLe: 
 * 170uA drop on LDCL015 voltage reg if ENA pin floating. Need pulldown.
-* 16Mhz crystal with 256 division draws 5uA!!!</text>
+* 16Mhz crystal with 256 division draws 5uA!!!
+* 0.5% freq stability @ 16Mhz : 
+ 0.005 * 16000000 = +/- 80000 oscillations /s
+ aka 80000*60 /16000000 = +/- 0.3s / minute </text>
 </plain>
 <instances>
 </instances>
