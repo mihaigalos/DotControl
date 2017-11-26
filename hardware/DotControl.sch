@@ -28639,7 +28639,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
 <part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="JP3" library="adafruit" deviceset="PINHD-1X6" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
@@ -28656,7 +28656,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <part name="SW2" library="Seeed-OPL-Switch" deviceset="SMD-BUTTON(2P-6.0X3.0X2.5MM)" device="-DHT-1163S" value="Previous"/>
 <part name="JP1" library="adafruit" deviceset="PINHD-1X8" device="CLEANBIG"/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
-<part name="BAT1" library="Battery" deviceset="BATTERY" device="20PTH"/>
+<part name="BAT1" library="Battery" deviceset="BATTERY" device="20PTH" value="3V ML2032"/>
 <part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED1" library="led" deviceset="GM1WA55311A" device=""/>
 <part name="R2" library="SparkFun" deviceset="RESISTOR-ARRAY" device="0603-ARV"/>
@@ -28680,12 +28680,12 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SJ2" library="SparkFun" deviceset="SOLDERJUMPER" device="TRACE"/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
-<part name="D1" library="diode" deviceset="DIODE-" device="SOD523"/>
-<part name="D2" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="D1" library="diode" deviceset="DIODE-" device="SOD523" value="MM5Z3V3"/>
+<part name="D2" library="diode" deviceset="DIODE-" device="SOD523" value="MM5Z3V3"/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="47Ω"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="47Ω"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="1.5kΩ"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="X1" library="adafruit" deviceset="ANTENNA_U.FL" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
@@ -28715,6 +28715,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
 <part name="Q1" library="adafruit" deviceset="MOSFET-N" device="REFLOW"/>
 <part name="IC1" library="linear" deviceset="MCP1703" device="CB"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -28810,7 +28811,7 @@ from voltage regulator</text>
 <instance part="U3" gate="G$1" x="215.9" y="58.42"/>
 <instance part="+3V10" gate="G$1" x="228.6" y="63.5"/>
 <instance part="SUPPLY5" gate="GND" x="228.6" y="53.34"/>
-<instance part="SJ2" gate="1" x="217.17" y="34.29" rot="R180"/>
+<instance part="SJ2" gate="1" x="422.91" y="240.03" rot="R180"/>
 <instance part="+3V9" gate="G$1" x="172.72" y="149.86"/>
 <instance part="D1" gate="G$1" x="322.58" y="99.06" rot="R90"/>
 <instance part="D2" gate="G$1" x="332.74" y="99.06" rot="R90"/>
@@ -28847,6 +28848,7 @@ from voltage regulator</text>
 <instance part="SUPPLY22" gate="GND" x="154.94" y="162.56"/>
 <instance part="Q1" gate="G$1" x="144.78" y="149.86" rot="R270"/>
 <instance part="IC1" gate="G$1" x="172.72" y="205.74"/>
+<instance part="C2" gate="G$1" x="160.02" y="203.2"/>
 </instances>
 <busses>
 </busses>
@@ -28887,6 +28889,9 @@ from voltage regulator</text>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <wire x1="172.72" y1="198.12" x2="172.72" y2="195.58" width="0.1524" layer="91"/>
 <junction x="172.72" y="195.58"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="198.12" x2="160.02" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="195.58" x2="172.72" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="6"/>
@@ -29297,8 +29302,11 @@ from voltage regulator</text>
 <segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="152.4" y1="210.82" x2="152.4" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="205.74" x2="162.56" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="205.74" x2="160.02" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VI"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="205.74" x2="162.56" y2="205.74" width="0.1524" layer="91"/>
+<junction x="160.02" y="205.74"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -29720,6 +29728,33 @@ from voltage regulator</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,63.5,190.5,R7D,1,,,,"/>
+<approved hash="101,1,157.48,264.16,R2A,1,,,,"/>
+<approved hash="101,1,157.48,274.32,R2A,2,,,,"/>
+<approved hash="101,1,212.09,34.29,SJ2,2,,,,"/>
+<approved hash="101,1,222.25,34.29,SJ2,1,,,,"/>
+<approved hash="104,1,393.7,236.22,U$1,VCC,+3V3,,,"/>
+<approved hash="104,1,393.7,195.58,U$1,GND1,GND,,,"/>
+<approved hash="104,1,114.3,134.62,BAT1,-,GND,,,"/>
+<approved hash="104,1,114.3,144.78,BAT1,+,N$18,,,"/>
+<approved hash="104,1,214.63,132.08,U4,VDD,+3V3,,,"/>
+<approved hash="106,1,279.4,220.98,ADC,,,,,"/>
+<approved hash="105,1,116.84,99.06,N$9,,,,,"/>
+<approved hash="105,1,107.95,172.72,N$17,,,,,"/>
+<approved hash="105,1,134.62,148.59,N$19,,,,,"/>
+<approved hash="111,1,101.6,80.01,N$9,,,,,"/>
+<approved hash="113,1,61.6881,213.36,SW1,,,,,"/>
+<approved hash="113,1,189.462,201.93,C1,,,,,"/>
+<approved hash="113,1,337.769,220.825,Y1,,,,,"/>
+<approved hash="113,1,116.019,139.7,BAT1,,,,,"/>
+<approved hash="113,1,156.485,269.24,R2,,,,,"/>
+<approved hash="113,1,347.98,112.755,R3,,,,,"/>
+<approved hash="113,1,347.98,110.215,R4,,,,,"/>
+<approved hash="113,1,357.145,121.92,R5,,,,,"/>
+<approved hash="113,1,417.83,225.772,X1,,,,,"/>
+<approved hash="113,1,557.604,215.9,SJ5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
