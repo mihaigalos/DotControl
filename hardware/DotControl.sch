@@ -23843,6 +23843,8 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23981,6 +23983,8 @@ from voltage regulator</text>
 <instance part="C7" gate="G$1" x="347.98" y="10.16" rot="R90"/>
 <instance part="C9" gate="G$1" x="347.98" y="25.4" rot="R90"/>
 <instance part="SUPPLY26" gate="GND" x="363.22" y="15.24"/>
+<instance part="R8" gate="G$1" x="203.2" y="66.04" rot="R90"/>
+<instance part="+3V15" gate="G$1" x="203.2" y="73.66"/>
 </instances>
 <busses>
 </busses>
@@ -24419,6 +24423,10 @@ from voltage regulator</text>
 <wire x1="505.46" y1="226.06" x2="505.46" y2="228.6" width="0.1524" layer="91"/>
 <junction x="505.46" y="228.6"/>
 </segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="+3V15" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="PUSH" class="0">
 <segment>
@@ -24571,8 +24579,12 @@ from voltage regulator</text>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="SDA"/>
-<wire x1="205.74" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="58.42" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
 <label x="200.66" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="58.42" x2="200.66" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="60.96" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
+<junction x="203.2" y="58.42"/>
 </segment>
 <segment>
 <pinref part="SW6" gate="G$1" pin="2"/>
