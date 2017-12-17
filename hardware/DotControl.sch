@@ -23870,7 +23870,7 @@ Humidity</text>
 <text x="505.46" y="167.64" size="3.81" layer="95">Movement</text>
 <wire x1="457.2" y1="246.38" x2="457.2" y2="165.1" width="0.1524" layer="95" style="longdash"/>
 <text x="94.234" y="124.968" size="1.016" layer="91">Spice Model : http://tinyurl.com/yc4ltowd</text>
-<text x="142.24" y="152.4" size="1.016" layer="91">BSH103 N-Channel</text>
+<text x="142.24" y="152.4" size="1.016" layer="91">BSH203 P-Channel</text>
 <text x="94.488" y="127" size="1.016" layer="91">Poor man's battery charger</text>
 <text x="135.636" y="125.222" size="1.016" layer="91">Prevent high current charging 
 from voltage regulator</text>
